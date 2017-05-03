@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #bbb;
+}
+#heder{
+	padding: 40px;
+	width: 500px;
+	height: auto;
+	min-width: 250px;
+	background-color: #e5b244;
+	border-radius: 4px;
+
+}
+#header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.add{
+	height: 20px;
+	display: inline-block;
+}
+
+input {
+  border: none;
+  width: 250px;
+  padding: 10px;
+  float: left;
+  font-size: 14px;
+  border-radius: 4px;
+  
+}
+
+
+.button{
+	padding-top: 5px;
+	width: 75px;
+	height: 37px;
+	background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid #fff;
+	border-radius: 3px;
+	float: right;
+	margin-right: 85px;
+
+}
+.button:hover{
+	background-color: #8c8c8c;
+	color: #fff;
+
+}
+#list{
+	width: 500px;
+	height: auto;
+	
+}
+
+ul li{
+	
+	background-color: #f8f8f8;
+	padding: 13px 20px 10px 50px;
+	font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #000;
+  
+}
+ul li:hover{
+	background-color: #8c8c8c;
+	color: #fff;
+}
+ul li:nth-child(odd) {
+  background-color: #c9c9c9;
+}
+ul li:nth-child(odd):hover{
+	background-color: #8c8c8c;
+	color: #fff;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  height: 16px;
+  width: 8px;
+  border-color: #e5b244;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 12px;
+  left: 15px;
+  transform: rotate(50deg);
+}
+ul li.checked {
+  background-color: #888;
+  color: #f44336;
+  text-decoration: line-through;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
